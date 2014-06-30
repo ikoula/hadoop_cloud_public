@@ -1,0 +1,15 @@
+DEPENDENCIES
+  cloudera
+    git: git://github.com/ikoula/cloudera.git
+    revision: 3c0540ed3183730d815df4c267911fcc20a1c3e9
+  iptables-ng
+    git: git://github.com/chr4-cookbooks/iptables-ng.git
+    revision: 28ee604c17176e16e43304371cababd4d3cc080b
+  java
+    git: git://github.com/socrata-cookbooks/java.git
+    revision: eb1618039b841eb9cc031222f5c822c9dd2c7f81
+
+GRAPH
+  cloudera (1.5.5)
+  iptables-ng (2.2.0)
+  java (1.22.1)
