@@ -26,6 +26,7 @@ override_attributes(
 run_list(
 
     "recipe[java]",
+    "recipe[cloudera-hostname]",
     "recipe[cloudera]",
     "recipe[cloudera::flume]",
     "recipe[cloudera::pig]",

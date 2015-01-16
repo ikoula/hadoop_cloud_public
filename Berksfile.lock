@@ -2,6 +2,11 @@ DEPENDENCIES
   cloudera
     git: git://github.com/ikoula/cloudera.git
     revision: 3c0540ed3183730d815df4c267911fcc20a1c3e9
+  cloudera-hostname
+    path: site-cookbooks/cloudera-hostname
+  hostname
+    git: git://github.com/3ofcoins/chef-cookbook-hostname.git
+    revision: 2c326c76ee5b87422df8226c89a3949148af6b8a
   iptables-ng
     git: git://github.com/chr4-cookbooks/iptables-ng.git
     revision: 28ee604c17176e16e43304371cababd4d3cc080b
@@ -11,5 +16,10 @@ DEPENDENCIES
 
 GRAPH
   cloudera (1.5.5)
+  cloudera-hostname (0.1.3)
+    hostname (>= 0.0.0)
+  hostname (0.3.0)
+    hostsfile (>= 0.0.0)
+  hostsfile (2.4.5)
   iptables-ng (2.2.0)
   java (1.22.1)
